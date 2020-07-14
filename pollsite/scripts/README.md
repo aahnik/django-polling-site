@@ -20,7 +20,7 @@ $ python3 manage.py shell
 2. EXECUTE THE SCRIPT IN PYTHON CONSOLE RUNNING IN DJANGO CONTEXT 
 
 ```
->>> exec(open('script.py',r).read())
+>>> exec(open('script.py').read())
 ```
 
 # OR 

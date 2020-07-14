@@ -1,7 +1,7 @@
 from django.utils import timezone
 
 # run from manage.py shell otherwise you will face error
-from .models import Question, Choice
+from poll.models import Question, Choice
 
 
 import random
@@ -26,9 +26,6 @@ def random_para(lim_char):
     if len(para) > lim_char:
         para = para[:lim_char]
     return para.strip()
-
-
-ni = len(Question.object.all())
 
 for i in range(300):
     title = random_para(50)
