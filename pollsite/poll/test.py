@@ -28,7 +28,7 @@ def random_para(lim_char):
 
 class QuestionModelTests(TestCase):
 
-    def generate_filler_data(self): # FIXME not working as expected 
+    def generate_filler_data(self):  # FIXME not working as expected
         ni = len(Question.object.all())
 
         for i in range(300):
