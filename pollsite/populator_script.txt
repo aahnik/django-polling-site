@@ -1,7 +1,7 @@
 """
 SEE README FOR DETAILS ABOUT RUNNING THIS PYTHON SCRIPT
-
->>> script_path = '/scripts/populator.py' 
+>>> import os 
+>>> script_path = f'{os.getcwd}/scripts/populator.txt' 
 >>> script = open(script_path).read()
 >>> exec(script) 
 
