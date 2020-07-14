@@ -1,8 +1,17 @@
+"""
+SEE README FOR DETAILS ABOUT RUNNING THIS SCRIPT
+
+>>> script_path = '/scripts/populator.py' 
+>>> script = open(script_path).read()
+>>> exec(script) 
+
+ """
+
+
 from django.utils import timezone
 
 # run from manage.py shell otherwise you will face error
 from poll.models import Question, Choice
-
 
 import random
 import string
@@ -27,7 +36,8 @@ def random_para(lim_char):
         para = para[:lim_char]
     return para.strip()
 
-for i in range(300):
+
+for i in range(30):
     title = random_para(50)
     desc = random_para(200)
     pub_date = timezone.now() - datetime.timedelta(days=random.randint(0, 100))
