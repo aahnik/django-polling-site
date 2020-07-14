@@ -32,6 +32,3 @@ as running a set of commands in django shell
 ```shell
 $ python manage.py runscript script.py
 ```    
-
-
-
