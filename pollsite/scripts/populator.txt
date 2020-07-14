@@ -1,5 +1,5 @@
 """
-SEE README FOR DETAILS ABOUT RUNNING THIS SCRIPT
+SEE README FOR DETAILS ABOUT RUNNING THIS PYTHON SCRIPT
 
 >>> script_path = '/scripts/populator.py' 
 >>> script = open(script_path).read()
@@ -40,7 +40,7 @@ def random_para(lim_char):
 for i in range(30):
     title = random_para(50)
     desc = random_para(200)
-    pub_date = timezone.now() - datetime.timedelta(days=random.randint(0, 100))
+    pub_date = timezone.now() - datetime.timedelta(days=random.randint(0, 10))
     featured = True if i % 2 == 0 else False
 
     q = Question(title=title, desc=desc,
