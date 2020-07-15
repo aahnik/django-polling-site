@@ -27,7 +27,8 @@ pip install -r requirements.txt
 **3. MOVE INSIDE THE `pollsite` DIRECTORY AND MAKE MIGRATIONS**
 
 ```
-python manage.py makemigrations
+python manage.py makemigrations poll
+python manage.py makemigrations home
 python manage.py migrate
 ```
 
@@ -38,7 +39,6 @@ python manage.py createsuperuser
 ```
 
 **5. POPULATE DATABASE WITH DUMMY DATA OF QUESTIONS AND CHOICES, BY RUNNING THE `populator_script` FROM DJANGO SHELL**
-
 [click here to see how](https://github.com/aahnik/django-polling_site#running-scripts-from-django-shell)
 
 **NOW RUN THE SERVER**
