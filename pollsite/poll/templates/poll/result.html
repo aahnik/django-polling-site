@@ -1,0 +1,28 @@
+{% extends "base_layout.html" %}
+
+{% block title  %}
+
+<title>Canvas Results of a Poll</title>
+
+{% endblock  %}
+
+{% block content  %}
+
+
+
+<h1>{{ question.title }}</h1>
+
+<ul>
+{% for choice in question.choice_set.all %}
+    <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes|pluralize }}</li>
+{% endfor %}
+</ul>
+
+<h1>the looks of this page sucks!! I know that ...
+I AM NOT A FRONTEND DEV, i work mainly  on  backend, my work is to implement functionality 
+not to visually appeal you 
+If you know frontend , contribute improvements to this page 
+</h1>  
+<a href="https://github.com/aahnik/django-polling_site">GitHub Repo</a>
+
+{% endblock  %}

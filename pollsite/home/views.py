@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404
 from .models import TeamMember
 
 import yaml
+from django.utils import timezone
 
 
 def index(request):
@@ -16,3 +17,8 @@ def index(request):
     team = TeamMember.objects.order_by('title')
     context = {'hpe': homePageElements, 'team': team, 'stats': stats}
     return render(request, 'home/index.html', context)
+
+def opnsrc(request):
+    now = timezone.now()
+    context = {'now': now}
+    return render(request,'home/opensource.html',context)

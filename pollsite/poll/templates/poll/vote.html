@@ -1,0 +1,31 @@
+{% extends "base_layout.html" %}
+
+{% block title  %}
+
+<title>Canvas Vote in a Poll</title>
+
+{% endblock  %}
+
+
+
+
+{% block content  %}
+<h1>{{ question.title }}</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<form action="{% url 'poll:vote' question.id %}" method="post">
+    {% csrf_token %}
+    {% for choice in question.choice_set.all %}
+    <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
+    <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
+    {% endfor %}
+    <input type="submit" value="Vote">
+</form>
+{% endblock  %}
+<h1>the looks of this page sucks!! I know that ...
+I AM NOT A FRONTEND DEV, i work mainly  on  backend, my work is to implement functionality 
+not to visually appeal you 
+If you know frontend , contribute improvements to this page 
+</h1>  
+<a href="https://github.com/aahnik/django-polling_site">GitHub Repo</a>
