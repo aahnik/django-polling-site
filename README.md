@@ -1,7 +1,7 @@
 # django-polling_site
 django-polling_site ( Life's First Django Project)
 
-[**SEE SCREENSHOTS**]()
+[**SEE SCREENSHOTS**](https://github.com/aahnik/django-polling_site/tree/master/ScreenShots)
 
 ## HOW TO RUN IN YOUR COMPUTER
 
@@ -17,28 +17,37 @@ Virtual Environments are a great way to wrap python projects. I have stopped wor
 IF YOU ARE NEW TO VIRTUAL ENVIRONMENTS READ [PYTHON-3 OFFICIAL DOCS](https://docs.python.org/3/library/venv.html) 
 
 **2. CLONE THIS REPO `django-polling-site` IN YOUR DIRECTORY, AND INSTALL THE REQUIREMENTS**
+
 `pip install -r requirements.txt`
 
 **3. MOVE INSIDE THE `pollsite` DIRECTORY AND MAKE MIGRATIONS**
+
 `python manage.py makemigrations`
+
 `python manage.py migrate`
 
 **4. CREATE A SUPERUSER , WITH YOUR OWN USERNAME AND PASSWORD**
+
 `python manage.py createsuperuser`
 
 **5. POPULATE DATABASE WITH DUMMY DATA OF QUESTIONS AND CHOICES, BY RUNNING THE `populator_script` FROM DJANGO SHELL**
-[click here to see how]()
+
+[click here to see how](https://github.com/aahnik/django-polling_site#running-scripts-from-django-shell)
 
 **NOW RUN THE SERVER**
+
 `python manage.py runserver`
+
 Go to  http://127.0.0.1:8000/ . This is where Django starts server by default
 
 **HOLA !! ENJOY YOU HAVE SUCCESSFULLY RUN THE SERVER**
+
 Click on Admin button on top right corner to go the the Django Administration page.
 You can add team members , change or add questions and choices
 
 
 *Vist DJANGO'S OFFICIAL WEBSITE FOR MORE DETAILS..*
+
 __you can now play around with the code your self__
 
 
@@ -49,6 +58,7 @@ __you can now play around with the code your self__
 _YOU WILL GET ERRORS IF YOU RUN THESE SCRIPT IN CWD CONTEXT_
 
 DON'T RUN DIRECTLY LIKE 
+
 ```shell
 python3 script.py
 ```
