@@ -16,7 +16,6 @@ def index(request):
 def results(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
     return render(request, 'poll/results.html', {'question': question})
-    
 
 
 def vote(request, question_id):

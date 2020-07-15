@@ -10,15 +10,16 @@ def index(request):
         homePageElements = yaml.full_load(file)
     stats = {
         'forks': 10,
-        'choices': 100,
+        'choices': '100%',
         'participants': 200,
-        'questions': 30
+        'questions': '24/7'
     }
     team = TeamMember.objects.order_by('title')
     context = {'hpe': homePageElements, 'team': team, 'stats': stats}
     return render(request, 'home/index.html', context)
 
+
 def opnsrc(request):
     now = timezone.now()
     context = {'now': now}
-    return render(request,'home/opensource.html',context)
+    return render(request, 'home/opensource.html', context)
