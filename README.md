@@ -3,7 +3,7 @@ django-polling_site ( Life's First Django Project)
 
 [**SEE SCREENSHOTS**](https://github.com/aahnik/django-polling_site/tree/master/ScreenShots)
 
-## HOW TO RUN IN YOUR COMPUTER
+## HOW TO RUN ON YOUR COMPUTER
 
 __pre-requisites : python(3.8 or above) and pip must be installed__ 
 
@@ -20,17 +20,17 @@ IF YOU ARE NEW TO VIRTUAL ENVIRONMENTS READ [PYTHON-3 OFFICIAL DOCS](https://doc
 
 **2. CLONE THIS REPO `django-polling-site` IN YOUR DIRECTORY, AND INSTALL THE REQUIREMENTS**
 
-`pip install -r requirements.txt`
+> `pip install -r requirements.txt`
 
 **3. MOVE INSIDE THE `pollsite` DIRECTORY AND MAKE MIGRATIONS**
 
-`python manage.py makemigrations`
+> `python manage.py makemigrations`
 
-`python manage.py migrate`
+> `python manage.py migrate`
 
 **4. CREATE A SUPERUSER , WITH YOUR OWN USERNAME AND PASSWORD**
 
-`python manage.py createsuperuser`
+> `python manage.py createsuperuser`
 
 **5. POPULATE DATABASE WITH DUMMY DATA OF QUESTIONS AND CHOICES, BY RUNNING THE `populator_script` FROM DJANGO SHELL**
 
