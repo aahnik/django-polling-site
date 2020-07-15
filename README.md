@@ -41,6 +41,9 @@ python manage.py createsuperuser
 **5. POPULATE DATABASE WITH DUMMY DATA OF QUESTIONS AND CHOICES, BY RUNNING THE `populator_script` FROM DJANGO SHELL**
 [click here to see how](https://github.com/aahnik/django-polling_site#running-scripts-from-django-shell)
 
+**6. Inside the `home` app directory , configure the homePage.yaml according to your wish**
+Inside `views.py` of same directory, put the absolute path of homePage.yaml in the place instructed. 
+
 **NOW RUN THE SERVER**
 
 ```

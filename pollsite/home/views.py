@@ -6,7 +6,7 @@ from django.utils import timezone
 import  os 
 
 def index(request):
-    with open('/home/aahnik/django-polling_site/pollsite/home/homePage.yaml', 'r') as file:
+    with open('__PUT PATH OF homePage.yaml here__', 'r') as file:
         homePageElements = yaml.full_load(file)
     stats = {
         'forks': 10,
