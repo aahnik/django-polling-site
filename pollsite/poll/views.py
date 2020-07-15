@@ -1,5 +1,3 @@
-
-
 from django.http import HttpResponse
 
 from .models import Question
@@ -11,7 +9,8 @@ def index(request):
     latest_question_list = Question.objects.order_by('-pub_date')
     context = {'latest_question_list': latest_question_list}
     return render(request, 'poll/index.html', context)
-    # TODO add pagination 
+
+    # to:LEARN add pagination
 
 # def detail(request, question_id):
 #     return HttpResponse(f"You are looking at Question {question_id}")
