@@ -13,7 +13,9 @@ __pre-requisites : python(3.8 or above) and pip must be installed__
 
 Virtual Environments are a great way to wrap python projects. I have stopped working on this repo on Jul 15 2020. At the time of my work I have used the latest versions of python and django. If you are reading this after 2020, chances are new versions of python and django might have rolled out . So to ensure that old code runs smoothly , create a virtual environment. 
 
-*Using Virtual Environments ensures the dependancies of each project is independently availaible and there is no headache of breakage of code and EVERY PROJECT STAYS INDEPENDENT OF ONE ANOTHER* 
+*Using Virtual Environments ensures the dependancies of each project is independently availaible and there is no headache of breakage of code and 
+EVERY PROJECT STAYS INDEPENDENT OF ONE ANOTHER* 
+
 IF YOU ARE NEW TO VIRTUAL ENVIRONMENTS READ [PYTHON-3 OFFICIAL DOCS](https://docs.python.org/3/library/venv.html) 
 
 **2. CLONE THIS REPO `django-polling-site` IN YOUR DIRECTORY, AND INSTALL THE REQUIREMENTS**
