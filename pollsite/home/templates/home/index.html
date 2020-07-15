@@ -1,15 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base_layout.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <title>Canvass</title>
-</head>
+{% block title  %}
 
-<body>
+<title>Canvass Home</title>
 
+{% endblock  %}
+
+{% block content  %}
     <section class="text-gray-500 bg-gray-900 body-font">
         <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
             <div
@@ -30,6 +27,7 @@
             </div>
         </div>
     </section>
+    <a name="Statistics"></a>
     <section class="text-gray-700 body-font">
         <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-col text-center w-full mb-20">
@@ -86,6 +84,7 @@
             </div>
         </div>
     </section>
+    <a name="Moderators"></a>
     <section class="text-gray-700 body-font">
         <div class="container px-5 py-24 mx-auto">
             <div class="flex flex-col text-center w-full mb-20">
@@ -135,9 +134,7 @@
             </div>
         </div>
     </section>
+{% endblock  %}
 
 
 
-</body>
-
-</html>

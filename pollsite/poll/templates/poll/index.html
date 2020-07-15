@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base_layout.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Canvass All Polls</title>
-    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-</head>
+{% block title  %}
+
+<title>Canvass All Polls</title>
+
+{% endblock  %}
+
+{% block content  %}
+
 {% if latest_question_list %}
 <section class="text-gray-700 body-font overflow-hidden">
     <div class="container px-5 py-24 mx-auto">
@@ -40,8 +41,4 @@
 <p>No polls availaible</p>
 {% endif %}
 
-<body>
-
-</body>
-
-</html>
+{% endblock  %}
