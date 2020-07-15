@@ -3,10 +3,12 @@ from .models import TeamMember
 
 import yaml
 from django.utils import timezone
-import  os 
+import os
+
 
 def index(request):
-    with open('__PUT PATH OF homePage.yaml here__', 'r') as file:
+    # NOTE PUT ABSOLUTE PATH OF homePage.yaml here
+    with open('__PUT ABSOLUTE PATH OF homePage.yaml here__', 'r') as file:
         homePageElements = yaml.full_load(file)
     stats = {
         'forks': 10,
