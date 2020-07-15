@@ -43,7 +43,8 @@ python manage.py createsuperuser
 
 **NOW RUN THE SERVER**
 
-```python manage.py runserver
+```
+python manage.py runserver
 ```
 
 Go to  http://127.0.0.1:8000/ . This is where Django starts server by default
