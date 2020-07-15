@@ -8,14 +8,14 @@ from .models import Choice, Question
 def index(request):
     latest_question_list = Question.objects.order_by('-pub_date')
     context = {'latest_question_list': latest_question_list}
-    return render(request, 'poll/index.html', context)
+    return render(request, 'poll/index', context)
 
     # to:LEARN add pagination
 
 
 def results(request, question_id):
     question = get_object_or_404(Question, pk=question_id)
-    return render(request, 'poll/results.html', {'question': question})
+    return render(request, 'poll/results', {'question': question})
 
 
 def vote(request, question_id):
@@ -24,7 +24,7 @@ def vote(request, question_id):
         selected_choice = question.choice_set.get(pk=request.POST['choice'])
     except (KeyError, Choice.DoesNotExist):
         # Redisplay the question voting form.
-        return render(request, 'poll/vote.html', {
+        return render(request, 'poll/vote', {
             'question': question,
             'error_message': "You didn't select a choice.",
         })

@@ -16,10 +16,10 @@ def index(request):
     }
     team = TeamMember.objects.order_by('title')
     context = {'hpe': homePageElements, 'team': team, 'stats': stats}
-    return render(request, 'home/index.html', context)
+    return render(request, 'home/index', context)
 
 
 def opnsrc(request):
     now = timezone.now()
     context = {'now': now}
-    return render(request, 'home/opensource.html', context)
+    return render(request, 'home/opensource', context)
