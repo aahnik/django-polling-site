@@ -16,7 +16,7 @@ class Question(models.Model):
         now = timezone.now()
         return now - datetime.timedelta(days=1) <= self.pub_date <= now
 
-    def participants(self):  # FIXME
+    def participants(self):  
         participants = 0
         choices = self.choice_set.all()
         for choice in choices:
