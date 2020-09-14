@@ -1,6 +1,10 @@
 # django-polling_site
 django-polling_site ( Life's First Django Project)
 
+[![GitHub license](https://img.shields.io/github/license/aahnik/django-polling_site)](https://github.com/aahnik/django-polling_site/blob/master/LICENSE)
+[![No Maintenance Intended | Archived](http://unmaintained.tech/badge.svg)](https://gitHub.com/aahnik/django-polling_site/graphs/commit-activity)
+
+
 [**SEE SCREENSHOTS**](https://github.com/aahnik/django-polling_site/tree/master/ScreenShots)
 
 ## HOW TO RUN ON YOUR COMPUTER
