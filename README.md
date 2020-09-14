@@ -78,17 +78,17 @@ DON'T RUN DIRECTLY LIKE
 ```shell
 python3 script.py
 ```
+ 
 
-~~**The `exec()` Function**~~
 
-~~`exec()` function is used for the dynamic execution of Python program 
+
+**The `exec()` Function**
+
+`exec()` function is used for the dynamic execution of Python program 
 which can either be in form of a  string or object code. If it is a **string**, 
 the _string is parsed as a suite of Python statements_ which is then executed
- _unless a syntax error occurs_ and if it is an object code, it is simply executed.~~
- 
- **A BETTER WAY**
- 
- `python3 manage.py shell < myScript.py`
+ _unless a syntax error occurs_ and if it is an object code, it is simply executed.
+
 
 1. START THE **DJANGO SHELL**  BY RUNNING 
 
@@ -108,3 +108,6 @@ $ python3 manage.py shell
 ```
 >>> exec(script)
 ```
+ **UPDATE : A BETTER WAY**
+ 
+ `python3 manage.py shell < myScript.py`
