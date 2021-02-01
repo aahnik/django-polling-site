@@ -1,4 +1,7 @@
 # django-polling_site
+
+[![promoted](https://raw.githubusercontent.com/aahnik/aahnik/master/promoted/general.gif)](https://aahnik.github.io/aahnik/promoted/general.html)
+
 django-polling_site ( Life's First Django Project)
 
 [![GitHub license](https://img.shields.io/github/license/aahnik/django-polling_site)](https://github.com/aahnik/django-polling_site/blob/master/LICENSE)
